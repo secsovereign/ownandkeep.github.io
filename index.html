@@ -32,6 +32,7 @@
     </button>
     <div class="nav-menu" id="nav-menu">
       <a href="#products">Products</a>
+      <a href="support/">Support</a>
       <a href="#about">About</a>
     </div>
   </nav>
@@ -44,7 +45,11 @@
       <h1 class="hero-title">OwnandKeep</h1>
       <p class="hero-eyebrow">Tools · Knowledge · Freedom</p>
       <p class="hero-promise">Own what matters. Keep what's yours.</p>
-      <a class="btn" href="#products">Shop Now</a>
+      <div class="hero-actions">
+        <a class="btn" href="#products">Shop Now</a>
+        <a class="btn btn-ghost" href="support/">Request Support</a>
+      </div>
+      <a class="hero-contact-link" href="#contact">Write OwnandKeep</a>
     </div>
   </header>
 
@@ -111,7 +116,29 @@
       <h2 class="about-title">Sovereignty shouldn't require a computer science degree.</h2>
       <p>Bitcoin self-custody is one of the most important financial decisions a person can make. The tools to do it well exist. The knowledge to use them confidently is harder to find. OwnandKeep curates both.</p>
       <p>We sell hardware kits on Amazon and eBay because that is where people shop. We write books because sovereignty without understanding is fragile. We build software because what exists is not good enough yet.</p>
+      <p>Setup, training, and ongoing custody help are handled by Sovreign, our official support partner. Amazon handles returns. OwnandKeep sells the tools.</p>
+      <a class="btn about-support" href="support/">Request support</a>
       <p class="about-close">Be independent. Be prepared. Own and keep.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="contact-title">Write OwnandKeep</h2>
+      <p class="contact-lead">Kits, listings, the book, or the site. Write and we will get back to you.</p>
+      <form class="contact-form" id="contact-form" novalidate>
+        <label class="honeypot" for="contact-website">Website</label>
+        <input class="honeypot" id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        <label for="contact-name">Name</label>
+        <input id="contact-name" name="name" type="text" maxlength="80" required>
+        <label for="contact-reach">How to reach you</label>
+        <input id="contact-reach" name="reach" type="text" maxlength="160" required>
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="5" maxlength="2000" required></textarea>
+        <button class="btn" type="submit">Send</button>
+        <p class="contact-status" id="contact-status" role="status"></p>
+      </form>
     </div>
   </section>
 
@@ -128,7 +155,9 @@
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="#products">Products</a>
+        <a href="support/">Support</a>
         <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="footer-social">
         <!-- TODO: insert social URL -->

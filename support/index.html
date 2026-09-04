@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request custody setup and training through OwnandKeep. Sovreign is our official support partner.">
+  <meta name="theme-color" content="#0F1F1A">
+  <title>OwnandKeep — Support</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../main.js" defer></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a class="nav-brand" href="../">
+      <img class="nav-logo" src="../assets/logo.svg" alt="" width="32" height="32">
+      <span class="nav-wordmark">OwnandKeep</span>
+    </a>
+    <a class="nav-text-link" href="../#products">Products</a>
+  </nav>
+
+  <section class="contact support-page">
+    <div class="contact-inner contact-inner-wide">
+      <p class="section-eyebrow">Support</p>
+      <h1 class="contact-title">Request setup and training</h1>
+      <p class="contact-lead">Sovreign is our official support partner. Fill this in. We introduce you. They handle custody setup, training, and ongoing help. Amazon still handles returns on anything you buy.</p>
+
+      <form class="contact-form" id="support-form" novalidate>
+        <label class="honeypot" for="support-website">Website</label>
+        <input class="honeypot" id="support-website" name="website" type="text" tabindex="-1" autocomplete="off">
+
+        <fieldset>
+          <legend>Contact</legend>
+          <label for="support-name">Contact name</label>
+          <input id="support-name" name="name" type="text" maxlength="80" required>
+          <label for="support-business">Business name</label>
+          <input id="support-business" name="business" type="text" maxlength="120">
+          <label for="support-email">Email</label>
+          <input id="support-email" name="email" type="email" maxlength="160" required>
+          <label for="support-phone">Phone</label>
+          <input id="support-phone" name="phone" type="tel" maxlength="40">
+          <label for="support-country">Country</label>
+          <input id="support-country" name="country" type="text" maxlength="80" required>
+          <label for="support-state">State</label>
+          <input id="support-state" name="state" type="text" maxlength="80">
+        </fieldset>
+
+        <fieldset>
+          <legend>Goals with Bitcoin</legend>
+          <label for="support-goals">Tell us about your goals with bitcoin</label>
+          <textarea id="support-goals" name="goals" rows="5" maxlength="2000" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Current knowledge</legend>
+          <p class="field-hint">How familiar are you with bitcoin?</p>
+          <label class="choice"><input type="radio" name="familiarity" value="Very new" required> Very new</label>
+          <label class="choice"><input type="radio" name="familiarity" value="Somewhat familiar"> Somewhat familiar</label>
+          <label class="choice"><input type="radio" name="familiarity" value="Knowledgeable but want expert help"> Knowledgeable but want expert help</label>
+          <label class="choice"><input type="radio" name="familiarity" value="Highly experienced, just need guidance on specific issues"> Highly experienced, just need guidance on specific issues</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Primary concerns or interests</legend>
+          <p class="field-hint">Select all that apply.</p>
+          <label class="choice"><input type="checkbox" name="interest" value="Security and custody"> Security and custody</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Tax strategies or legal considerations/compliance"> Tax strategies or legal considerations / compliance</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Price volatility"> Price volatility</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Technical complexity (wallets, transactions, hardware, software)"> Technical complexity (wallets, transactions, hardware, software)</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Bitcoin payments integration"> Bitcoin payments integration</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Education/monetary understanding"> Education / monetary understanding</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Financial strategy"> Financial strategy</label>
+          <label class="choice"><input type="checkbox" name="interest" value="Other"> Other</label>
+          <label for="support-elaborate">Please elaborate</label>
+          <textarea id="support-elaborate" name="elaborate" rows="4" maxlength="2000"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Anything else</legend>
+          <label for="support-other">Is there anything else you would like us to know?</label>
+          <textarea id="support-other" name="other" rows="4" maxlength="2000"></textarea>
+        </fieldset>
+
+        <button class="btn" type="submit">Request support</button>
+        <p class="contact-status" id="support-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-wordmark-row">
+          <img src="../assets/logo.svg" alt="" width="32" height="32">
+          <span>OwnandKeep</span>
+        </div>
+        <p>Tools, Knowledge, and Resources for a Sovereign Future.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="../#products">Products</a>
+        <a href="./">Support</a>
+        <a href="../#about">About</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <div></div>
+    </div>
+    <div class="footer-rule"></div>
+    <p class="footer-copy">© 2026 OwnandKeep.</p>
+  </footer>
+</body>
+</html>
