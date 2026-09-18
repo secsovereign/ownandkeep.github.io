@@ -109,6 +109,7 @@ a {
 .nav-logo {
   width: 32px;
   height: 32px;
+  object-fit: contain;
 }
 
 .nav-wordmark {
@@ -201,6 +202,7 @@ a {
   width: 80px;
   height: 80px;
   margin-bottom: 28px;
+  object-fit: contain;
   animation: fade-in 0.8s ease both;
 }
 
@@ -635,6 +637,12 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.footer-wordmark-row img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .footer-wordmark-row span {
