@@ -88,6 +88,17 @@
     });
   }
 
+  // "Ask about availability" on a product card: open the contact form with the product named.
+  document.querySelectorAll("a[data-ask]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (!contactForm) return;
+      var field = contactForm.elements.message;
+      if (field && !field.value.trim()) {
+        field.value = "I'd like to ask about: " + link.getAttribute("data-ask") + "\n\n";
+      }
+    });
+  });
+
   var supportForm = document.getElementById("support-form");
   if (supportForm) {
     supportForm.addEventListener("submit", function (event) {

@@ -364,6 +364,13 @@ a {
   flex: 1;
 }
 
+.product-note {
+  margin-top: auto;
+  color: var(--earth);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
 .badge {
   position: absolute;
   top: 20px;
